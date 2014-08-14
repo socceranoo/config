@@ -1,4 +1,4 @@
-let g:uncrustify_enable = 0
+let g:uncrustify_enable = 1
 
 autocmd BufWrite *.c :call Uncrustify('C')
 autocmd BufWrite *.C :call Uncrustify('C')
