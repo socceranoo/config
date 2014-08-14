@@ -1,9 +1,10 @@
 let g:uncrustify_enable = 1
 
-autocmd BufWrite *.c :call Uncrustify('C')
-autocmd BufWrite *.C :call Uncrustify('C')
-autocmd BufWrite *.h :call Uncrustify('C')
-autocmd BufWrite *.H :call Uncrustify('C')
+"autocmd BufWrite *.c :call Uncrustify('C')
+"autocmd BufWrite *.C :call Uncrustify('C')
+"autocmd BufWrite *.h :call Uncrustify('C')
+"autocmd BufWrite *.H :call Uncrustify('C')
+nnoremap <F7> :call Uncrustify('C')<cr>
 
 " Restore cursor position, window position, and last search after running a
 " command.
