@@ -12,10 +12,10 @@ autocmd Filetype js setlocal ts=4 sw=4 noexpandtab
 autocmd Filetype c setlocal ts=4 sw=4 noexpandtab
 autocmd Filetype html setlocal ts=4 sw=4 noexpandtab
 
-autocmd BufWritePost *.c :call Uncrustify('C')
-autocmd BufWritePost *.C :call Uncrustify('C')
-autocmd BufWritePost *.h :call Uncrustify('C')
-autocmd BufWritePost *.H :call Uncrustify('C')
+autocmd BufWrite *.c :call Uncrustify('C')
+autocmd BufWrite *.C :call Uncrustify('C')
+autocmd BufWrite *.h :call Uncrustify('C')
+autocmd BufWrite *.H :call Uncrustify('C')
 
 set wildmode=full
 set wildmenu
