@@ -1,3 +1,5 @@
+let g:uncrustify_enable = 0
+
 autocmd BufWrite *.c :call Uncrustify('C')
 autocmd BufWrite *.C :call Uncrustify('C')
 autocmd BufWrite *.h :call Uncrustify('C')
@@ -18,7 +20,7 @@ function! Preserve(command)
   call setpos('.', cursor_position)
 
   " Execute the command.
-  if exists('g:uncrustify_cfg_file_path') && executable('uncrustify') == 1
+  if exists('g:uncrustify_cfg_file_path') && executable('uncrustify') == 1 && g:uncrustify_enable == 1
     execute a:command
   endif
 
