@@ -1,0 +1,6 @@
+UNCRUSTIFY
+
+create a link to uncrustify-vimrc as ~/.uncrustify-vimrc
+Source this file in your ~/.vimrc.after
+
+For Example look at vimrc.after.anoop 
