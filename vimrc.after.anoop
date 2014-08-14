@@ -126,7 +126,9 @@ function! Preserve(command)
   call setpos('.', cursor_position)
 
   " Execute the command.
-  execute a:command
+  if exists('g:uncrustify_cfg_file_path') && executable('uncrustify') == 1
+    execute a:command
+  endif
 
   " Restore the last search.
   let @/ = search
