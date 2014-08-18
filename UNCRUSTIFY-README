@@ -1,0 +1,12 @@
+UNCRUSTIFY
+
+1. copy uncrustify binary in the folders specfied by PATH variable
+
+2. create a link to uncrustify-vimrc as ~/.uncrustify-vimrc
+
+3. Source this file in your ~/.vimrc.after
+  For Example look at vimrc.after.anoop
+
+4. for C function comments copy the func-comments.txt file in the
+  same directory as uncrustify.cfg file
+
